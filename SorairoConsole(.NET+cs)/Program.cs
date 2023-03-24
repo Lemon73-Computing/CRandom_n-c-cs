@@ -39,6 +39,8 @@ while (true)
     {
         //"性格"を入力することでキャラクターにランダムな性格を割り当て
         case "性格":
+        case "c":
+        case "character":
             //1D6を計算
             d6 = rand.Next(1, 7);
             kind = "性格";
@@ -72,6 +74,8 @@ while (true)
             
         //"年齢"を入力することでキャラクターにランダムな年齢を割り当て
         case "年齢":
+        case "a":
+        case "age":
             kind = "年齢";
             d6 = rand.Next(0, 100);
             answ = $"{d6}";
