@@ -3,7 +3,7 @@ CRandom とは、 LEC によって作成されたキャラクター設定制定�
 
 ### 技術仕様
     言語:C#
-    フレームワーク:.NET7.0
+    フレームワーク:.NET6.0/7.0
     形式:CUI(コンソール版)
     ベース:SorairoColors
     対応OS:Windows
