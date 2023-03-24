@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SorairoConsole(.NET+cs)", "SorairoConsole(.NET+cs)\SorairoConsole(.NET+cs).csproj", "{BBC7E7AA-4935-4EB7-A1DB-AFF73CBE9F7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBC7E7AA-4935-4EB7-A1DB-AFF73CBE9F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC7E7AA-4935-4EB7-A1DB-AFF73CBE9F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC7E7AA-4935-4EB7-A1DB-AFF73CBE9F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC7E7AA-4935-4EB7-A1DB-AFF73CBE9F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1DA03C1-924F-425E-B98D-3B58FCAB892A}
+	EndGlobalSection
+EndGlobal
