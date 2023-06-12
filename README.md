@@ -1,4 +1,4 @@
-# CRondom
+# CRandom
 ## CRandom とは…
 LECが開発したキャラクター設定自動決定プログラムである。
 
