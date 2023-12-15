@@ -6,8 +6,9 @@
 - 言語: C#
 - フレームワーク: .NET6.0/7.0
 - 形式: CUI(コンソール版)
-- ベース: SkyColors(Console版)
+- ベース: SkyColors(n-c-cs4)
 - 対応OS: Windows
+- 対応言語: 日本語
 
 > [!NOTE]
 > 技術的にはMac/Linuxも対応可能ですが、ビルドや試験動作ができないため現時点では非対応としています。
