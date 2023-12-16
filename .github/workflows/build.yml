@@ -24,24 +24,56 @@ jobs:
     - name: Publish
       run: |
         cd CRandom_n-c-cs
-        dotnet publish -c Release -o publish_windows
-        dotnet publish -c Release -o publish_osx -r osx.10.11-x64 --self-contained true /p:PublishTrimmde=true /p:Publish
-        dotnet publish -c Release -o publish_linux -r linux-x64 --self-contained true /p:PublishTrimmde=true /p:Publish
+        # Windows Build
+        dotnet publish -c Release -o publish_windows-x64 -r win-x64
+        dotnet publish -c Release -o publish_windows-x86 -r win-x86
+        dotnet publish -c Release -o publish_windows-arm64 -r win-arm64
+        # Mac Build
+        dotnet publish -c Release -o publish_osx-x64 -r osx-x64 --self-contained true /p:PublishTrimmde=true /p:Publish
+        dotnet publish -c Release -o publish_osx-arm64 -r osx-arm64 --self-contained true /p:PublishTrimmde=true /p:Publish
+        # Linux Build
+        dotnet publish -c Release -o publish_linux-x64 -r linux-x64 --self-contained true /p:PublishTrimmde=true /p:Publish
+        dotnet publish -c Release -o publish_linux-arm64 -r linux-arm64 --self-contained true /p:PublishTrimmde=true /p:Publish
+        # https://learn.microsoft.com/en-us/dotnet/core/rid-catalog
 
-    - name: Windows Artifacts
+    - name: Windows-x64 Artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: Windows Artifacts
-        path: CRandom_n-c-cs/publish_windows
+        name: Windows-x64 Artifacts
+        path: CRandom_n-c-cs/publish_windows-x64
 
-    - name: Mac Artifacts
+    - name: Windows-x86 Artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: Mac Artifacts
-        path: CRandom_n-c-cs/publish_osx
+        name: Windows-x86 Artifacts
+        path: CRandom_n-c-cs/publish_windows-x86
 
-    - name: Linux Artifacts
+    - name: Windows-arm64 Artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: Linux Artifacts
-        path: CRandom_n-c-cs/publish_linux
+        name: Windows-arm64 Artifacts
+        path: CRandom_n-c-cs/publish_windows-arm64
+
+    - name: Mac-x64 Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mac-x64 Artifacts
+        path: CRandom_n-c-cs/publish_osx-x64
+
+    - name: Mac-arm64 Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mac-arm64 Artifacts
+        path: CRandom_n-c-cs/publish_osx-arm64
+
+    - name: Linux-x64 Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Linux-x64 Artifacts
+        path: CRandom_n-c-cs/publish_linux-x64
+
+    - name: Linux-arm64 Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Linux-arm64 Artifacts
+        path: CRandom_n-c-cs/publish_linux-arm64
