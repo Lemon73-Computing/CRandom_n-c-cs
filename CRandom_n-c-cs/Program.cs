@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 
 //CRandom(キャラクター設定自動設定ソフトウェア)へようこそ!!
-Console.WriteLine("CRandom(.NET 7.0/C#)へようこそ!");
+Console.WriteLine("CRandom(.NET 8.0/C#)へようこそ!");
 
 //宣言
 //コマンド

@@ -3,7 +3,7 @@
 
 ### 技術
 *n-c-cs: .NET Console C#*
-- 言語: C#(.NET7.0)
+- 言語: C#(.NET8.0)
 - 形式: CUI(コンソール版)
 - ベース: SkyColors(n-c-cs4)
 
