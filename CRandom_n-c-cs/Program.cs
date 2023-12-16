@@ -1,19 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
-//CRandom(キャラクター設定自動設定ソフトウェア)へようこそ!!
 Console.WriteLine("CRandom(.NET 8.0/C#)へようこそ!");
 
 //宣言
-//コマンド
 var comand = "";
-//ランダムな数値
 Random rand = new Random();
-//1D6
 int d6;
-//ジャンル
 string kind = "";
-//コマンド出力内容
 string answ = "";
 
 Console.WriteLine("------------- ---------------");
@@ -24,14 +17,10 @@ Console.WriteLine("|           | |             |");
 Console.WriteLine("|           | |Lang:jp      |");
 Console.WriteLine("------------- ---------------");
 
-//メイン処理
 while (true)
 {
-    //コマンドを入力してください
     Console.WriteLine("コマンドを入力してください。");
-    //入力画面受付
-    comand = Console.ReadLine();
-    //コマンドを認識
+    comand = Console.ReadLine(); //入力受付
     Console.WriteLine("コマンド:{0}", comand);
 
     //コマンドの判別
