@@ -24,10 +24,24 @@ jobs:
     - name: Publish
       run: |
         cd CRandom_n-c-cs
-        dotnet publish -c Release -o publish
+        dotnet publish -c Release -o publish_windows
+        dotnet publish -c Release -o publish_osx -r osx.10.11-x64 --self-contained true /p:PublishTrimmde=true /p:Publish
+        dotnet publish -c Release -o publish_linux -r linux-x64 --self-contained true /p:PublishTrimmde=true /p:Publish
 
-    - name: Artifacts
+    - name: Windows Artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: build
-        path: CRandom_n-c-cs/publish
+        name: Windows Artifacts
+        path: CRandom_n-c-cs/publish_windows
+
+    - name: Mac Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mac Artifacts
+        path: CRandom_n-c-cs/publish_osx
+
+    - name: Linux Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Linux Artifacts
+        path: CRandom_n-c-cs/publish_linux
