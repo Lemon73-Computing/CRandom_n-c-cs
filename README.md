@@ -1,4 +1,8 @@
 # CRandom
+[![Build](https://github.com/Lemon73-Computing/CRandom_n-c-cs/actions/workflows/build.yml/badge.svg)](https://github.com/Lemon73-Computing/CRandom_n-c-cs/actions/workflows/build.yml)
+[![CodeQL](https://github.com/Lemon73-Computing/CRandom_n-c-cs/actions/workflows/codeql.yml/badge.svg)](https://github.com/Lemon73-Computing/CRandom_n-c-cs/actions/workflows/codeql.yml)
+[![Docs](https://github.com/Lemon73-Computing/CRandom_n-c-cs/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Lemon73-Computing/CRandom_n-c-cs/actions/workflows/pages/pages-build-deployment)
+
 キャラクターの設定を自動で決定するソフトウェアです。
 
 ### 技術
