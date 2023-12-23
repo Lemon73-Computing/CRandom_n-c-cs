@@ -52,7 +52,21 @@ while (true)
             answ = $"{d6}";
             break;
 
-        //"終了"/exitの入力で終了
+        // "ヒント"で使い方を表示
+        case "ヒント":
+        case "ヘルプ":
+        case "h":
+        case "help":
+        case "hint":
+            kind = "ヒント";
+            answ = "\n" + 
+                   "c - make random character\n" + 
+                   "age - show random age\n" + 
+                   "help - show help for this app\n" + 
+                   "exit - exit this app\n";
+            break;
+
+        // "終了"/exitの入力で終了
         case "終了":
         case "exit":
             kind = "特殊コマンド";
