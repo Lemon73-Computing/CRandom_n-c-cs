@@ -4,7 +4,7 @@ Console.WriteLine("CRandom(.NET 8.0/C#)へようこそ!");
 
 //宣言
 var comand = "";
-Random rand = new Random();
+Random rand = new();
 int d6;
 string kind = "";
 string answ = "";
@@ -20,48 +20,32 @@ Console.WriteLine("------------- ---------------");
 while (true)
 {
     Console.WriteLine("コマンドを入力してください。");
-    comand = Console.ReadLine(); //入力受付
+    comand = Console.ReadLine(); // 入力受付
     Console.WriteLine("コマンド:{0}", comand);
 
-    //コマンドの判別
+    // コマンドの判別
     switch (comand)
     {
-        //"性格"を入力することでキャラクターにランダムな性格を割り当て
+        // "性格"を入力することでキャラクターにランダムな性格を割り当て
         case "性格":
         case "c":
         case "character":
-            //1D6を計算
+            // 1D6を計算
             d6 = rand.Next(1, 7);
             kind = "性格";
-            switch (d6)
+            answ = d6 switch
             {
-                case 1:
-                    answ = "元気";
-                    break;
-
-                case 2:
-                    answ = "おとなしい";
-                    break;
-
-                case 3:
-                    answ = "恥ずかしがりや";
-                    break;
-                    
-                case 4:
-                    answ = "高飛車";
-                    break;
-                    
-                case 5:
-                    answ = "あほ";
-                    break;
-                    
-                case 6:
-                    answ = "積極的";
-                    break;
-            }
+                1 => "元気",
+                2 => "おとなしい",
+                3 => "恥ずかしがりや",
+                4 => "高飛車",
+                5 => "あほの子",
+                6 => "積極的",
+                _ => throw new NotImplementedException(),
+            };
             break;
             
-        //"年齢"を入力することでキャラクターにランダムな年齢を割り当て
+        // "年齢"を入力することでキャラクターにランダムな年齢を割り当て
         case "年齢":
         case "a":
         case "age":
@@ -78,14 +62,14 @@ while (true)
             break;
     }
 
-    //結果を出力
+    // 結果を出力
     Console.WriteLine("");
     Console.WriteLine($"{kind}:{answ}");
     Console.WriteLine("");
     kind = "";
     answ = "";
 
-    //終了
+    // 終了
     if (comand == "exit" || comand == "終了")
         break;
 }
