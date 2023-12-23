@@ -1,27 +1,25 @@
-﻿using System.Runtime.CompilerServices;
+﻿Console.WriteLine("CRandom(.NET 8.0/C#)へようこそ!");
 
-Console.WriteLine("CRandom(.NET 8.0/C#)へようこそ!");
-
-//宣言
+// 宣言
 var comand = "";
 Random rand = new();
 int d6;
 string kind = "";
 string answ = "";
 
-Console.WriteLine("------------- ---------------");
-Console.WriteLine("|           | |Maker:LEC    |");
-Console.WriteLine("|           | |             |");
-Console.WriteLine("|  CRandom  | |Base:.NET 7.0|");
-Console.WriteLine("|           | |             |");
-Console.WriteLine("|           | |Lang:jp      |");
-Console.WriteLine("------------- ---------------");
+Console.WriteLine("------------- ----------------");
+Console.WriteLine("|           | |Maker: LEC    |");
+Console.WriteLine("|           | |              |");
+Console.WriteLine("|  CRandom  | |Base: .NET 8.0|");
+Console.WriteLine("|           | |              |");
+Console.WriteLine("|           | |Lang: Japanese|");
+Console.WriteLine("------------- ----------------");
 
 while (true)
 {
     Console.WriteLine("コマンドを入力してください。");
     comand = Console.ReadLine(); // 入力受付
-    Console.WriteLine("コマンド:{0}", comand);
+    Console.WriteLine("コマンド: {0}", comand);
 
     // コマンドの判別
     switch (comand)
@@ -64,7 +62,7 @@ while (true)
 
     // 結果を出力
     Console.WriteLine("");
-    Console.WriteLine($"{kind}:{answ}");
+    Console.WriteLine($"{kind}: {answ}");
     Console.WriteLine("");
     kind = "";
     answ = "";
