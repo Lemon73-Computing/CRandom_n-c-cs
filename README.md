@@ -7,9 +7,9 @@
 
 ### 技術
 *n-c-cs: .NET Console C#*
-- 言語: C#(.NET8.0)
-- 形式: CUI(コンソール版)
-- ベース: SkyColors(n-c-cs4)
+- 言語: C# (.NET8.0)
+- 形式: CUI (コンソール版)
+- ベース: SkyColors (n-c-cs4)
 
 ### 対応
 - OS: Windows / Mac / Linux
