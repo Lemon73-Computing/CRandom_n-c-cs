@@ -1,5 +1,5 @@
 # CRandom
-CRandom とは、 LEC によって開発されたキャラクター自動作成アプリケーションです。
+CRandom とは、[レモンの休息所](https://lemon73-computing.github.io)によって開発されたキャラクター自動作成アプリケーションです。
 
 ## ダウンロード方法
 追記予定
